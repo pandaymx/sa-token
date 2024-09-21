@@ -1,0 +1,14 @@
+### 正确的用户名和密码
+GET http://localhost:8081/acc/doLogin?name=zhang&pwd=123456
+### 错误的用户名密码
+GET http://localhost:8081/acc/doLogin?name=zhang&pwd=1234567
+### 是否登录
+GET http://localhost:8081/acc/isLogin
+### 检查是否登录
+GET http://localhost:8081/acc/checkLogin
+### 注销登录
+GET http://localhost:8081/acc/logout
+### 获取当前用户 ID
+GET http://localhost:8081/acc/getLoginId
+### 获取 Token 信息
+GET http://localhost:8081/acc/tokenInfo
