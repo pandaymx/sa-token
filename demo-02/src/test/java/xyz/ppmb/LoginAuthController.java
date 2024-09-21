@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class ApplicationTest {
+public class LoginAuthController {
     @Test
     void login() {
         // 登录用户

@@ -1,0 +1,48 @@
+### 正确的用户名和密码
+GET http://localhost:8081/acc/doLogin?name=zhang&pwd=123456
+### 错误的用户名密码
+GET http://localhost:8081/acc/doLogin?name=zhang&pwd=1234567
+### 是否登录
+GET http://localhost:8081/acc/isLogin
+### 检查是否登录
+GET http://localhost:8081/acc/checkLogin
+### 注销登录
+GET http://localhost:8081/acc/logout
+### 获取当前用户 ID
+GET http://localhost:8081/acc/getLoginId
+### 获取 Token 信息
+GET http://localhost:8081/acc/tokenInfo
+
+
+### 查询权限
+GET http://localhost:8081/jur/getPermission
+### 权限校验
+GET http://localhost:8081/jur/checkPermission
+### 角色校验
+GET http://localhost:8081/jur/checkRole
+### 权限通配符
+GET http://localhost:8081/jur/wildcardPermission
+
+
+### 将指定账号强制注销
+GET http://localhost:8081/kickout/logout?userId=10001
+### 将指定账号踢下线
+GET http://localhost:8081/kickout/kickout?userId=10001
+### 根据 Token 值踢人
+GET http://localhost:8081/kickout/kickoutByTokenValue?tokenValue=xxxx-xxxx-xxxx-xxxx
+
+
+### 登录鉴权
+GET http://localhost:8081/at-check/checkLogin
+### 权限校验
+GET http://localhost:8081/at-check/checkPermission
+### 一次性校验多个方法 必须全部拥有，才可以进入方法
+GET http://localhost:8081/at-check/checkPermission2
+### 一次校验多个方法 只要拥有其中一个，就可以进入方法
+GET http://localhost:8081/at-check/checkPermission3
+### 角色校验
+GET http://localhost:8081/at-check/checkRole
+### 角色权限双重 “or校验”
+GET http://localhost:8081/at-check/userAdd
+### 忽略校验
+GET http://localhost:8081/at-check/ignore
