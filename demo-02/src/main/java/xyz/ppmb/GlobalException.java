@@ -14,7 +14,6 @@ public class GlobalException {
 			throws Exception {
 		// 打印堆栈，以供调试
 		nle.printStackTrace();
-
 		// 判断场景值，定制化异常信息
 		String message = "";
 		if(nle.getType().equals(NotLoginException.NOT_TOKEN)) {
